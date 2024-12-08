@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+
+  <body class="bg-white">
+    <!-- NAVBAR -->
+    <nav class="w-full fixed top-0 left-0 z-50 h-20 bg-white border border-b-gray-200">
+      <div class="flex w-full justify-between items-center h-full px-10">
+        <div class="flex justify-center items-center gap-10">
+          <i class="bi bi-list text-xl md:hidden flex cursor-pointer" id="menu"></i>
+          <a href="index.html" class="logo md:ml-0 -ml-7">
+            <img src="assets/logo.png" alt="Halodoc.png" class="md:h-8 sm:h-6 h-5" />
+          </a>
+          <div id="responsive-menu" class="px-7 py-5 flex w-full h-full flex-col gap-2 fixed top-0 -left-full bg-white transition-all duration-700 ease-in-out">
+            <div class="flex justify-between">
+            <div class="font-semibold">Menu</div>
+            <i class="bi bi-x-lg font-semibold cursor-pointer" id="close-navbar"></i>
+          </div>
+            <a href="index.html" class="hover:text-red-500 w-full py-3">Beranda</a>
+            <a href="article.html" class="hover:text-red-500 w-full py-3">Artrikel</a>
+            <a href="aplikasi.html" class="hover:text-red-500 w-full py-3">Aplikasi</a>
+            <a href="#" class="hover:text-red-500 py-3">Riwayat</a>
+          </div>
+          <div class="md:flex gap-10 hidden">
+          <a href="index.html" class="hover:text-red-500">Beranda</a>
+          <a href="article.html" class="hover:text-red-500">Artrikel</a>
+          <a href="aplikasi.html" class="hover:text-red-500">Aplikasi</a>
+          <a href="#" class="hover:text-red-500">Riwayat</a>
+        </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <a href="#" class="bg-red-500 py-2 sm:px-4 px-2 rounded text-white text-center hover:bg-red-700">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- ARTICLE SECTION -->
+    <section class="article w-full h-screen flex flex-col sm:px-10 px-5 sm:gap-5 gap-3 mt-8" id="article">
+      <div class="mt-16 text-gray-500 sm:text-sm text-xs"><a href="index.html" class="text-red-500 hover:underline sm:text-sm text-xs">Home</a> > Artikel</div>
+      <div class="w-full flex gap-5 mt-6">
+        <input type="text" placeholder="Cari artikel berdasarkan judul, kategori, topik" style="width: 91%" class="py-3 px-4 border border-gray-400 rounded-md" />
+        <button class="bg-red-500 py-3 px-6 rounded text-white hover:bg-red-700 flex gap-3 font-bold"><i class="bi bi-search"></i>Cari</button>
+      </div>
+      <div class="flex w-full justify-between mt-10">
+        <div class="font-semibold sm:text-2xl text-xl">Topik Terkini</div>
+        <a href="#" class="text-red-500 hover:underline font-semibold sm:text-base text-sm">Lihat Semua</a>
+      </div>
+      <div class="flex w-full gap-4">
+        <a href="#" class="sm:text-base text-sm nav-article text-center text-gray-600 p-2 border border-gray-400 rounded-md hover:border-red-500 hover:text-red-500 transition duration-300 ease-in-out">Demam</a>
+        <a href="#" class="sm:text-base text-sm nav-article text-center text-gray-600 p-2 border border-gray-400 rounded-md hover:border-red-500 hover:text-red-500 transition duration-300 ease-in-out">Kesehatan Mental</a>
+      </div>
+      <div class="mt-5 font-semibold text-2xl">Artikel Populer</div>
+      <div class="flex w-full lg:justify-between justify-center lg:gap-5 gap-2 lg:flex-nowrap flex-wrap">
+        <div class="md:h-96 sm:h-80 h-60 lg:w-4/6 w-full overflow-hidden rounded-xl">
+          <img src="assets/artikel_populer/kesehatan_mental.png" alt="kesehatan_mental.png" class="bg-cover w-full" />
+        </div>
+        <div class="lg:w-2/6 w-full flex flex-col">
+          <div class="flex p-2 rounded-md gap-3">
+            <img src="assets/artikel_populer/asi.png" alt="asi.png" class="w-28 rounded-md" />
+            <div class="flex flex-col">
+              <div class="font-semibold text-sm">Dukung ASI Ekslusif, Ini Pentingnya Peranan Konselor Laktasi</div>
+              <div class="flex gap-2 mt-2 items-end">
+                <div class="p-1 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">ASI Ekslusif</div>
+                <div class="text-xs text-gray-500 p-1">4 menit</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex p-2 rounded-md gap-3">
+            <img src="assets/artikel_populer/botol.png" alt="obat-botol.png" class="w-28 rounded-md" />
+            <div class="flex flex-col">
+              <div class="font-semibold text-sm">Rekomendasi Obat Batuk Actifed Atasi Batuk Kering dan Berdahak</div>
+              <div class="flex gap-2 mt-2 items-end">
+                <div class="p-1 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Batuk</div>
+                <div class="text-xs text-gray-500 p-1">6 menit</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex p-2 rounded-md gap-3">
+            <img src="assets/artikel_populer/kesehatan_mental.png" alt="kesehatan_mental.png" class="w-28 rounded-md" />
+            <div class="flex flex-col">
+              <div class="font-semibold text-sm">Ini 5 Cara Efektif Menjaga Kesehatan Mental di Lingkungan Kerja</div>
+              <div class="flex gap-2 mt-2 items-end">
+                <div class="p-1 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Kesehatan Mental</div>
+                <div class="text-xs text-gray-500 p-1">5 menit</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 font-semibold text-2xl">Artikel Terbaru</div>
+      <div class="flex md:gap-x-2 gap-x-2 gap-y-5 w-full items-center justify-around flex-wrap">
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/depresi.png" alt="depresi.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 sm:p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Bukan Cuma Depresi, Ini 5 Dampak Negatif Kecanduan Media Sosial</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin ">Kesehatan Mental</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin ">Depresi</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin ">Kecanduan Media Sosial</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Kecanduan media sosial berdampak negatif pada kesehatan fisik dan mental ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/perkuat_sistem_imune.png" alt="perkuat_sistem_imune.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full" />
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Perkuat Sistem Imun hingga Turunkan Tekanan, Ini 7 ...</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Diet & Nutrisi</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Ubi jalar mengandung berbagai vitamin yang dapat menyehatkan hingga meningkatkan ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-44">
+          <img src="assets/artikel_terbaru/rekomendasi_serum_retinol.png" alt="rekomendasi_serum_retinol.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Ini 5 Rekomendasi Serum Retinol di Apotek untuk Kulit Awet Muda</div>
+            <div class="flex flex-wrap md:gap-2 gap-1">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Tranexamid Acid</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Perawatan Wajah</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">La Roche Posay Retinol B3 Serum</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Serum retinol terbilang cukup ampuh untuk mengatasi berbagai masalah kulit. Beberapa ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/si_mani_banyak_manfaat.png" alt="si_mani_banyak_manfaat.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Si Manis Banyak Khasiat, Ini 7 Manfaat Mengonsumsi Jambu Air ...</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Diet & Nutrisi</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Jambu air tak hanya memiliki kandungan air yang berlimpah, tetapi juga kaya vitamin D ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/telapak_kaki.png" alt="telapak_kaki.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Bisa Jadi Tanda Penyakit, Ini 7 Penyebab Telapak Kaki Terasa Panas</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Diabetes</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Neuropati Perifer</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Neuropati</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Sensai panas pada telapak kaki yang terus menerus terjadi, bisa disebabkan oleh ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/tips_konsumsi_ikan.png" alt="ikan_tuna.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Ini Tips Mengonsumsi Ikan Tuna agar Terhindar dari Bahaya Merkuri</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Diet & Nutrisi</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Supaya terhindar dari bahaya merkuri, pastikan kamu mengonsumsi ikan tuna dalam ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/nutrisi_dan_mineral.png" alt="nutrisi_dan_mineral.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Kaya Nutrisi dan Mineral Penting, Ini 7 Manfaat Pisang Ambon untuk ...</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Diet & Nutrisi</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Pisang ambon mampu membantu menyehatkan sistem pencernaan hingga ...</div>
+          </div>
+        </div>
+        <div class="sm:w-72 w:full -mt-1 overflow-hidden sm:gap-0 gap-2 flex sm:flex-col shadow-md border border-gray-400 rounded-lg hover:border-gray-400 transition duration-300 ease-in-out sm:h-80 sm:p-0 p-2 h-40">
+          <img src="assets/artikel_terbaru/rekomendasi_antibiotik.png" alt="antibiotik.png" class="bg-cover sm:rounded-t-lg rounded-md sm:h-3/6 sm:w-full w-2/5 h-full"/>
+          <div class="flex flex-col gap-2 p-3">
+            <div class="font-semibold md:text-sm text-xs leading-tight">Ini Rekomendasi 5 Antibiotik untuk Sakit Gigi</div>
+            <div class="flex flex-wrap gap-2">
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Sakit Gigi</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Abses Gigi</div>
+              <div class="py-1 px-2 bg-blue-100 text-blue-950 rounded-md text-xs font-thin">Amoxicillin</div>
+            </div>
+            <div class="text-xs text-gray-500 leading-tight">Antibiotik untuk sakit gigi mampu mengatasi keluhan pada sakit gigi akibat infeksi bakteri ...</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center w-full mb-32">
+      <a href="#" class="font-semibold w-32 text-center p-2 border border-red-500 text-red-500 rounded-md hover:bg-red-500 hover:text-white transition duration-300 ease-in-out">
+        Selanjutnya
+      </a>
+    </div>
+    </section>
+    <!-- ARTICLE SECTION -->
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

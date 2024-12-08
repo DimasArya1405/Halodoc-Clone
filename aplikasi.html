@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="w-full fixed top-0 left-0 z-50 h-20 bg-white border border-b-gray-200">
+      <div class="flex w-full justify-between items-center h-full px-10">
+        <div class="flex justify-center items-center gap-10">
+          <i class="bi bi-list text-xl md:hidden flex cursor-pointer" id="menu"></i>
+          <a href="index.html" class="logo md:ml-0 -ml-7">
+            <img src="assets/logo.png" alt="Halodoc.png" class="md:h-8 sm:h-6 h-5" />
+          </a>
+          <div id="responsive-menu" class="px-7 py-5 flex w-full h-full flex-col gap-2 fixed top-0 -left-full bg-white transition-all duration-700 ease-in-out">
+            <div class="flex justify-between">
+            <div class="font-semibold">Menu</div>
+            <i class="bi bi-x-lg font-semibold cursor-pointer" id="close-navbar"></i>
+          </div>
+            <a href="index.html" class="hover:text-red-500 w-full py-3">Beranda</a>
+            <a href="article.html" class="hover:text-red-500 w-full py-3">Artrikel</a>
+            <a href="aplikasi.html" class="hover:text-red-500 w-full py-3">Aplikasi</a>
+            <a href="#" class="hover:text-red-500 py-3">Riwayat</a>
+          </div>
+          <div class="md:flex gap-10 hidden">
+          <a href="index.html" class="hover:text-red-500">Beranda</a>
+          <a href="article.html" class="hover:text-red-500">Artrikel</a>
+          <a href="aplikasi.html" class="hover:text-red-500">Aplikasi</a>
+          <a href="#" class="hover:text-red-500">Riwayat</a>
+        </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <a href="#" class="bg-red-500 py-2 sm:px-4 px-2 rounded text-white text-center hover:bg-red-700">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+    <div class="main bg-blue-50 min-h-screen w-full flex relative px-24 justify-between pt-24">
+      <img src="assets/aplikasi/app-banner.png" alt="app-banner.png" class="w-7/12 z-20" />
+      <div class="flex w-4/12 flex-col gap-3 justify-center items-center text-center">
+        <div class="text-2xl font-semibold w-72">Solusi Kesehatan Terlengkap di Indonesia</div>
+        <div class="text-gray-500">Aplikasi kesehatan #1 di Indonesia dengan <span class="font-semibold text-black">20juta+</span> download</div>
+        <div class="flex gap-5">
+        <div class="p-4 w-32 h-40 bg-white rounded-lg flex justify-center items-center flex-col shadow-lg">
+          <div class="text-gray-700 leading-tight">Rating di App Store</div>
+          <div class="text-2xl font-bold">4.9 <span class="font-semibold">/5</span></div>
+          <div class="flex gap-x-1 -mt-1">
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+          </div>
+          <img src="assets/badge/app-store.png" alt="app-store.png" class="mt-2 w-10/12">
+        </div>
+        <div class="p-4 w-32 h-40 bg-white rounded-lg flex justify-center items-center flex-col shadow-lg">
+          <div class="text-gray-700 leading-tight">Rating di Play Store</div>
+          <div class="text-2xl font-bold">4.8 <span class="font-semibold">/5</span></div>
+          <div class="flex gap-x-1 -mt-1">
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+            <i class="bi bi-star-fill text-red-500 text-xs"></i>
+          </div>
+          <img src="assets/badge/google-play.png" alt="google-play.png" class="mt-2 w-10/12">
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    <div class="flex z-30 bg-blue-50 px-28 py-10 gap-5">
+      <div class="flex flex-col w-96 gap-2">
+        <img src="assets/aplikasi/plus.png" alt="plus.png" class="w-12">
+        <div class="font-bold">Aplikasi Terpercaya</div>
+        <div class="text-gray-500 leading-tight">
+          Dapatkan solusi kesehatan dari dokter tepercaya, tenaga medis tersertifikasi dan obat-obatan asli, dalam satu aplikasi!
+        </div>
+      </div>
+      <div class="flex flex-col w-96 gap-2">
+        <img src="assets/aplikasi/secure.png" alt="secure.png" class="w-12">
+        <div class="font-bold">Mudah, Aman, dan Praktis</div>
+        <div class="text-gray-500 leading-tight">
+          Dapatkan obat, vitamin dan berbagai macam kebutuhan kesehatanmu dengan cepat, 1 jam sampai!
+        </div>
+      </div>
+      <div class="flex flex-col w-96 gap-2">
+        <img src="assets/aplikasi/anytime-anywhere.png" alt="anytime-everywhere.png" class="w-12">
+        <div class="font-bold">Kapan Saja, Dimana Saja</div>
+        <div class="text-gray-500 leading-tight">
+          Konsultasi dokter 24 jam dan pesan tes lab di rumah, bisa pakai manfaat asuransi kesehatan juga!
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-5 px-28 py-36 bg-white items-center">
+      <div class="flex flex-col gap-5">
+        <div class="text-2xl font-semibold">Semua Kebutuhan Kesehatanmu dan Keluarga dalam Satu Aplikasi</div>
+        <div class="text-gray-500">
+          Coba Halodoc dari smartphone-mu sekarang. Mulai dari konsultasi dengan dokter umum & spesialis, beli obat & vitamin online, medical check-up, tes laboratorium dari rumah, cek gula darah dan diabetes, buat janji rumah sakit tanpa antre, hingga tes Covid-19 dan PCR dengan mudah dan praktis.
+        </div>
+      </div>
+      <img src="assets/aplikasi/healthy-box.png" alt="healthy-box.PNG" class="w-1/2">
+    </div>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
